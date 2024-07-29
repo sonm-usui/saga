@@ -161,6 +161,11 @@
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
   }
 
+  .label {
+    display: flex;
+    align-items: center;
+  }
+
   .country:hover {
     background-color: #e8e8e862; /* Slightly darker background on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */

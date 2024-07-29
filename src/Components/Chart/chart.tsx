@@ -1,12 +1,5 @@
-import Leaf1 from '../../assets/images/svgs/Leaf1';
-import Leaf2 from '../../assets/images/svgs/Leaf2';
-import Leaf3 from '../../assets/images/svgs/Leaf3';
-import Leaf4 from '../../assets/images/svgs/Leaf4';
-import Leaf5 from '../../assets/images/svgs/Leaf5';
 import './chart.scss';
 import { Pie } from 'react-chartjs-2';
-
-import { Tabs } from '../../Components';
 import { nftService } from '../../services';
 import { useEffect } from 'react';
 import { useAppSelector } from '../../store';
@@ -22,7 +15,7 @@ import {
 
 // Register the necessary components
 ChartJS.register(Title, Tooltip, Legend, ArcElement);
-export const Chart: React.FC = () => {
+export const Chart = () => {
   const { handleGetNftUserStats, handleGetNftUserTokens } = nftService();
   const userStats = useAppSelector(selectorNftUserStats);
   const userTokens = useAppSelector(selectorNftUserTokens);
@@ -34,20 +27,29 @@ export const Chart: React.FC = () => {
       'rgba(255, 165, 0, 0.8)' // Neon orange
     ]
   };
+
   const colors = generateRandomColors(userStats?.activities?.length ?? 0);
-  function getRandomColor() {
-    const colors = Object.values(baseColors).flat(); // Flatten the array of color variants
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    return colors[randomIndex];
+
+  function shuffle(array: any) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 
   function generateRandomColors(num: number) {
+    const baseColorsArray = Object.values(baseColors).flat();
+    const shuffledColors = shuffle(baseColorsArray.slice());
+
     const colors = [];
     for (let i = 0; i < num; i++) {
-      colors.push(getRandomColor());
+      colors.push(shuffledColors[i % shuffledColors.length]);
     }
+
     return colors;
   }
+
   const data = {
     labels: [],
     datasets: [
@@ -61,7 +63,6 @@ export const Chart: React.FC = () => {
     ]
   };
   if (userStats && userTokens) {
-    console.log(userStats);
     debugger;
   }
   useEffect(() => {
@@ -124,7 +125,12 @@ export const Chart: React.FC = () => {
               <p className="title">FUNDED ACTIVITIES</p>
               <div className="pie-label">
                 {userStats?.activities?.map((act, index) => {
-                  return <p key={index}>{act.name}</p>;
+                  return (
+                    <div key={index} className="label">
+                      <p style={{ color: colors[index] }}> . </p>
+                      <p>{act.name}</p>
+                    </div>
+                  );
                 })}
               </div>
             </div>
