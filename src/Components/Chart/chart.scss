@@ -91,40 +91,45 @@
     margin-top: 25px;
   }
 
-  .my-impact-container {
+  .impact-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
     background-color: transparent; /* Changed to a more visually appealing blue */
-    padding: 10px; /* Added padding for better spacing */
   }
 
-  .my-impact-card {
-    width: 100%;
-    height: 110px; /* Adjusted width */
-    background-color: transparent; /* Set background to transparent */
+  .impact-card {
+    min-width: 310px; /* Adjusted width */
+    height: 130px; /* Adjusted width */
+    background-color: #4F008D; /* Set background to transparent */
     padding: 20px; /* Padding for content spacing */
-    border: 1px solid #a09f9f; /* Added a border with color */
+    border: 2px solid rgba(#a09f9f, 0.4); /* Added a border with color */
     border-radius: 8px; /* Rounded corners for the border */
     text-align: start; /* Centered text inside cards */
     color: #ffffff; /* Changed text color to match the border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for card depth effect */
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
   }
 
   .estimated {
-    color: #44e044;
-    font-weight: bold;
-    font-size: 25px;
+    color: #B2FF00;
+    font-weight: 400;
+    font-size: var(--font-size-xxl);
+    font-family: var(--font-agrandir);
+    
   }
   .card-description {
     display: flex;
     align-items: center;
     justify-content: start;
     margin-top: 8px; /* Added margin for spacing between elements */
+    p {
+      font-family: var(--font-agrandir);
+      letter-spacing: 1px;
+    }
   }
 
   .card-icon {
@@ -141,13 +146,20 @@
   }
   .countries-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-    gap: 16px; /* Spacing between items */
-    padding: 20px; /* Padding around the container */
-    background-color: transparent; /* Light background color for the container */
-    border-radius: 8px; /* Rounded corners for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    justify-content: space-between;
+    margin-top: 5%;
+     /* Spacing between items */
+    // padding: 20px; /* Padding around the container */
+    // background-color: transparent; /* Light background color for the container */
+    // border-radius: 8px; /* Rounded corners for the container */
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  .container-title {
+    font-size: var(--font-size-ssm);
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: var(--font-agrandir);
   }
 
   .country {
@@ -172,12 +184,22 @@
     font-weight: 600; /* Slightly bold text */
   }
 
-  .impact-title {
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 50%;
-    font-size: 30px;
+  .sub-impact-title {
+    font-size: var(--font-size-m);
+    line-height: 30px;
     color: #ffffff;
+    font-family: var(--font-agrandir);
+
+  }
+
+  .impact-title {
+    padding: 5% 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    font-size: var(--font-size-xxl);
+    line-height: 125%;
+    color: #ffffff;
+    font-family: var(--font-agrandir);
   }
 
   .pie-label {
@@ -186,10 +208,7 @@
 
   .country-item {
     color: #ffffff;
-
     padding: 4px;
-    display: flex;
-    align-items: start;
   }
   .activities-item {
     color: #ffffff;

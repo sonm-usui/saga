@@ -75,30 +75,31 @@ export const Chart: React.FC = () => {
           Lorem ipsum dolor sit amet, In elit viverra ultrices lectus, non rhoncus consectetur
           adipiscing elit.
         </div>
+        <p className="sub-impact-title">my impact</p>
         {userStats && (
-          <div className="my-impact-container">
-            <div className="my-impact-card">
+          <div className="impact-container">
+            <div className="impact-card">
               <div className="estimated">{userStats?.beneficiaries_count}</div>
               <div className="card-description">
                 <div className="card-icon"></div>
                 <p>BENEFICIARIES TO DATE</p>
               </div>
             </div>
-            <div className="my-impact-card">
+            <div className="impact-card">
               <div className="estimated">{userStats?.countries_data?.length}</div>
               <div className="card-description">
                 <div className="card-icon"></div>
                 <p>COUNTRIES PROVIDED WITH AID</p>
               </div>
             </div>
-            <div className="my-impact-card">
+            <div className="impact-card">
               <div className="estimated">{userStats.usd}%</div>
               <div className="card-description">
                 <div className="card-icon"></div>
                 <p>MORE THAN OTHER FUNDERS</p>
               </div>
             </div>
-            <div className="my-impact-card">
+            <div className="impact-card">
               <div className="estimated">2000</div>
               <div className="card-description">
                 <div className="card-icon"></div>
@@ -108,20 +109,22 @@ export const Chart: React.FC = () => {
           </div>
         )}
         <div className="countries-container">
-          <div className="country-item ">
-            <p>GLOBAL DISTRIBUTION</p>
-            {!!userStats?.countries_data?.length &&
-              userStats?.countries_data?.map((res) => {
-                return (
-                  <div className="country" key={res?.name}>
-                    <div>{res?.name}</div>
-                  </div>
-                );
-              })}
+          <div className="country-item">
+            <p className="container-title">GLOBAL DISTRIBUTION</p>
+            <div className="country-list">
+              {!!userStats?.countries_data?.length &&
+                userStats?.countries_data?.map((res) => {
+                  return (
+                    <div className="country" key={res?.name}>
+                      <div>{res?.name}</div>
+                    </div>
+                  );
+                })}
+            </div>
           </div>
           <div className="activities-item">
             <div>
-              <p className="title">FUNDED ACTIVITIES</p>
+              <p className="container-title">FUNDED ACTIVITIES</p>
               <div className="pie-label">
                 {userStats?.activities?.map((act, index) => {
                   return <p key={index}>{act.name}</p>;
