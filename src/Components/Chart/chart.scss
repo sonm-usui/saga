@@ -95,13 +95,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     background-color: transparent; /* Changed to a more visually appealing blue */
   }
 
   .impact-card {
     min-width: 310px; /* Adjusted width */
+    width: 24%;
     height: 130px; /* Adjusted width */
     background-color: #4F008D; /* Set background to transparent */
     padding: 20px; /* Padding for content spacing */
@@ -133,10 +134,8 @@
   }
 
   .card-icon {
-    width: 25px; /* Increased icon size for better visibility */
-    height: 25px;
-    background-color: white; /* Placeholder background color for icons */
-    border-radius: 50%; /* Rounded icon appearance */
+    width: 35px; /* Increased icon size for better visibility */
+    height: 35px;
     margin-right: 10px; /* Spacing between icon and text */
   }
 
@@ -154,32 +153,160 @@
     // border-radius: 8px; /* Rounded corners for the container */
     // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
+
+  .container-info {
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+  }
+
+  .country-list {
+    margin-top: 40px;
+    height: 400px;
+    display: flex;
+    gap: 16px;
+    font-family: var(--font-agrandir);
+    font-weight: 400;
+    font-size: 18px;
+
+    & > :first-child {
+      flex: 0 0 60%;
+      background: linear-gradient(180deg, rgb(111.27, 8.01, 192.31) 0%, rgb(79, 0, 141) 100%);
+ 
+    }
+  
+    & > :nth-child(2) {
+      flex: 0 0 40%;
+    }
+
+  }
+
   .container-title {
-    font-size: var(--font-size-ssm);
+    font-size: var(--font-size-sm);
     letter-spacing: 1px;
     line-height: 30px;
+    font-weight: 500;
     color: #ffffff;
-    font-family: var(--font-agrandir);
+    font-family: var(--font-space-mono);
+    letter-spacing: 1px;
   }
 
   .country {
-    width: 150px; /* Fixed width for each country item */
+    height: 300px; /* Fixed width for each country item */
     background-color: transparent; /* White background for each item */
     padding: 12px; /* Padding inside each item */
-    border: 1px solid #e0e0e0; /* Light border for each item */
+    border: 2px solid rgba(#e0e0e0, 0.35); /* Light border for each item */
     border-radius: 8px; /* Rounded corners for each item */
     text-align: center; /* Center text inside each item */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .label {
     display: flex;
+    font-size: var(--font-size-m);
     align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-family: var(--font-agrandir);
+      line-height: 125%;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+  }
+  .pie-legend {
+    min-width: 14px;
+    min-height: 14px;
+    border-radius: 100%;
+  }
+
+  .portfolio {
+    &-container{
+    display: flex;
+    gap: 16px;
+  }
+
+    &-card {
+      background-color: white;
+      width: 320px;
+      height: 360px;
+      border-radius: 10px;
+      position: relative;
+      &--img {
+        height: 220px;
+        border-radius: 10px  10px 0 0;
+        width: 100%;
+        background-color: #4F50FF;
+      }
+      &--details {
+        font-family: var(--font-agrandir);
+        padding: 24px;
+        color: #1D1B1E;
+      }
+      &--desc {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+      }
+      &--info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      &--fund {
+        background-color: #B2FF00;
+        padding: 4px 12px;
+        border-radius: 24px;
+        display: flex;
+        position: absolute;
+        bottom: 124px;
+        right: 12px;
+        height: 32px;
+        text-align: center;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      &--category {
+        display: flex; 
+        gap: 12px;
+        align-items: center;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      &--by {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .survey-title {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-agrandir);
+    color: white;
+    width: 63%;
+    margin-top: 112px;
+    line-height: 150%;
+    margin-bottom: 10%;
+    letter-spacing: 1px;
+
+    span {
+      text-decoration: underline;
+    }
   }
 
   .country:hover {
-    background-color: #e8e8e862; /* Slightly darker background on hover */
+    background-color: #ffffff2d; /* Slightly darker background on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
   }
 
@@ -188,11 +315,18 @@
     color: #ffffff;
     font-weight: 600; /* Slightly bold text */
   }
+  .ethPrice {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 
   .sub-impact-title {
     font-size: var(--font-size-m);
     line-height: 30px;
     color: #ffffff;
+    font-weight: 500;
     font-family: var(--font-agrandir);
 
   }
@@ -207,20 +341,14 @@
     font-family: var(--font-agrandir);
   }
 
-  .pie-label {
-    color: #adadad;
-  }
 
   .country-item {
-    color: #ffffff;
-    padding: 4px;
+    width: 43%;
   }
   .activities-item {
     color: #ffffff;
-
     padding: 4px;
-    display: flex;
-    align-items: start;
+    width: 43%;
   }
   @media screen and (max-width: 1400px) {
     &__title {
@@ -279,6 +407,56 @@
   }
 
   @media screen and (max-width: 1080px) {
+    .impact-title {
+      padding: 2% 10px;
+      width: 100%;
+      font-size: var(--font-size-xm);
+      line-height: 125%;
+      color: #ffffff;
+      font-family: var(--font-agrandir);
+    }
+
+    .impact-container {
+      flex-direction: column;
+    }
+
+    .countries-container {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      justify-content: flex-starts;
+    }
+
+    .country-item {
+      width: 100%;
+    }
+    .activities-item {
+      width: 100%;
+    }
+
+    .pie-label {
+      display: flex;
+      gap: 12px;
+    }
+  .container-info {
+    margin-top: 16px;
+    flex-direction: column;
+  }
+  .country-list {
+    margin-top: 16px; 
+    height: 300px;
+  }
+  .portfolio{
+    margin-top: 60px;
+    &-container {
+    align-items: center;
+    flex-direction: column;}
+  }
+
+  .survey-title {
+    width: 100%;
+  }
+  
     &__title {
       &-text {
         .leaf-1 {
