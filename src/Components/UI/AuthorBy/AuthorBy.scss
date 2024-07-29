@@ -1,0 +1,42 @@
+.author-by {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-agrandir);
+
+  &.medium {
+    font-size: var(--font-size-s);
+
+    .author-by-content {
+      .link {
+        font-size: var(--font-size-sm);
+      }
+    }
+  }
+
+  &-title {
+    font-family: var(--font-dm-sans);
+    margin-bottom: 2px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+
+    .link {
+      font-size: var(--font-size-s);
+      text-decoration: underline;
+      line-height: 100%;
+    }
+  }
+
+  .avatar {
+    width: 21px;
+    height: 21px;
+    border: 1px solid rgba(29, 27, 30, 0.380392);
+    box-shadow: none;
+  }
+}

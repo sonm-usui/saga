@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .social-item {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+      svg {
+        max-width: 13px;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.6;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    svg {
+      max-width: 18px;
+      height: auto;
+      path {
+        fill: var(--color-black-10);
+      }
+    }
+  }
+}

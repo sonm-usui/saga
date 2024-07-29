@@ -1,0 +1,39 @@
+.connect-wallet-modal {
+  .ant-modal {
+    &-title {
+      font-size: var(--font-size-m) !important;
+      text-transform: uppercase;
+    }
+
+    &-content {
+      padding: 30px !important;
+    }
+  }
+
+  .wallets {
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border-filter);
+      margin-bottom: 10px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--color-black-10);
+      }
+
+      &-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 20px;
+      }
+
+      &-name {
+        font-size: 18px;
+      }
+    }
+  }
+}

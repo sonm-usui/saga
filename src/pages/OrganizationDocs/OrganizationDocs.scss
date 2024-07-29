@@ -1,0 +1,25 @@
+.org-docs {
+    padding: 20px 0 50px 0;
+  
+    &-title {
+      text-align: center;
+      font-size: var(--font-size-xl-2);
+      font-family: var(--font-agrandir);
+  
+      span {
+        color: var(--color-green);
+      }
+    }
+
+    .container {
+        max-width: 700px;
+    }
+    .doc-item {
+        margin: 40px 0;
+    }
+    .message {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}  

@@ -1,0 +1,87 @@
+.payment-modal {
+  .title {
+    font-size: var(--font-size-s);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .amount {
+    font-size: var(--font-size-m);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .text-progress {
+    width: 100%;
+    color: var(--color-green-2);
+  }
+
+  .thank-you {
+    text-align: center;
+    color: var(--color-green-2);
+    margin-bottom: 30px;
+
+    .success {
+      font-size: var(--font-size-xl);
+    }
+
+    .tks-2 {
+      font-size: var(--font-size-xs);
+    }
+  }
+  
+  .ant-modal {
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+
+  .not-auth {
+    color: var(--color-red);
+  }
+
+  .ant-modal-content {
+    padding: 30px 20px 50px 20px !important;
+  }
+
+  button {
+    width: 100%;
+    &:disabled {
+      background-color: var(--color-grey);
+      opacity: 1;
+    }
+  }
+
+  .box-wrap {
+    width: 330px;
+    max-width: 90%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 80% !important;
+    max-width: 520px;
+
+    .title {
+    }
+    .text {
+      font-size: var(--font-size-m);
+      max-width: 500px;
+    }
+    .ant-modal {
+      &-body {
+        gap: 30px;
+      }
+    }
+    .thank-you {
+      .tks-2 {
+        font-size: var(--font-size-sm);
+      }
+    }
+  }
+}

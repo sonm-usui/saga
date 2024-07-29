@@ -1,0 +1,27 @@
+.loading-box {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &-text {
+    font-family: var(--font-agrandir);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 200px;
+
+    &-text {
+      font-size: var(--font-size-m);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.add-token-modal {
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .survey-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    font-style: italic;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .form-wrapper {
+    .form {
+      margin-bottom: 25px;
+
+      .item-input {
+        margin-bottom: 20px;
+
+        .add-token-select {
+          min-width: 100%;
+        }
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .title {
+      font-size: var(--font-size-m-2);
+    }
+
+    .sub-title {
+      font-size: var(--font-size-s-1);
+    }
+  }
+}

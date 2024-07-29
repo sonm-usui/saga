@@ -1,0 +1,47 @@
+.default-layout {
+  width: 100%;
+
+  &.purple {
+    background: radial-gradient(41.65% 52.06% at 65.22% 46.44%, #61139e 0%, #4f008d 100%);
+  }
+
+  .get-involed {
+    color: var(--color-purple);
+    font-family: var(--font-agrandir);
+    font-size: var(--font-size-xs);
+    line-height: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--color-white);
+    padding: 15px 15px 10px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 540px) {
+    &__content {
+      min-height: 85vh;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .get-involed {
+      font-size: var(--font-size-m);
+      bottom: 30px;
+      right: 30px;
+      background: var(--color-white);
+      padding: 20px 20px 15px 20px;
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .get-involed-about {
+      bottom: 76px;
+      right: 16px;
+    }
+  }
+}

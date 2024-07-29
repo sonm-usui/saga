@@ -1,0 +1,79 @@
+// modal
+.ant-modal {
+  &-close {
+    top: 15px !important;
+    right: 15px !important;
+
+    &:hover {
+      background: none !important;
+    }
+  }
+
+  &-content {
+    border-radius: 10px !important;
+    padding: 30px 20px !important;
+  }
+
+  &-body {
+    margin-top: 20px;
+  }
+}
+
+// select
+.ant-select-dropdown {
+  .ant-select-item-option {
+    &-content {
+      text-transform: capitalize;
+      white-space: normal !important;
+      font-family: var(--font-space-mono);
+    }
+  }
+}
+
+// spinner
+.spinner-color {
+  &-white {
+    .ant-spin-dot-item {
+      background-color: var(--color-white);
+    }
+  }
+
+  &-black {
+    .ant-spin-dot-item {
+      background-color: var(--color-black-10);
+    }
+  }
+}
+
+// date picker range
+.ant-picker-panels {
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+// set all font for modals
+.ant-modal {
+  &-title {
+    font-family: var(--font-space-mono);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &-body {
+    font-family: var(--font-agrandir);
+  }
+}
+
+.ant-modal-confirm-btns {
+  .ant-btn {
+    background-color: var(--color-black-10);
+
+    &:hover {
+      background-color: var(--color-black-10) !important;;
+      /* Keep this line */
+    }
+  }
+}

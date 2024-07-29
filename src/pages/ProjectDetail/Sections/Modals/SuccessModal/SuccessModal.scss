@@ -1,0 +1,112 @@
+.success-modal {
+  .title {
+    line-height: 130%;
+
+    br {
+      display: none;
+    }
+  }
+
+  .text {
+    line-height: 140%;
+    max-width: 405px;
+  }
+
+  .ant-modal {
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+
+  .box-wrap {
+    .wrap-buttons {
+      button {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 80% !important;
+    max-width: 700px;
+
+    .title {
+      font-size: var(--font-size-l);
+
+      br {
+        display: block;
+      }
+    }
+
+    .text {
+      font-size: var(--font-size-m);
+      max-width: 518px;
+    }
+
+    .text-link {
+      text-decoration: underline;
+    }
+
+    .ant-modal {
+      &-body {
+        gap: 30px;
+      }
+    }
+
+    .box-wrap {
+      .wrap-buttons {
+        flex-direction: row;
+
+        button {
+          width: auto;
+          max-width: inherit;
+        }
+
+        .btn-no {
+          max-width: 87px;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .title {
+      font-size: var(--font-size-l);
+
+      br {
+        display: block;
+      }
+    }
+
+    .text {
+      font-size: var(--font-size-m);
+      max-width: 695px;
+    }
+
+    .ant-modal {
+      &-body {
+        gap: 30px;
+      }
+    }
+
+    .box-wrap {
+      width: 75%;
+
+      .wrap-buttons {
+        width: 100%;
+
+        button {
+          width: 100%;
+          font-size: var(--font-size-m);
+          padding: 16px 22px 12px 22px;
+        }
+      }
+    }
+  }
+}

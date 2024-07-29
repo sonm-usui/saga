@@ -1,0 +1,76 @@
+.tabs {
+    color: white;
+    border: none;
+
+    .survey-form {
+        // background: var(--color-purple-10);
+        width: 100%;
+        max-width: 700px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+    
+    .react-tabs__tab-list {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-left: 100px;
+
+        &__tabs-list {
+            background: pink;
+            border: none;
+        }
+
+        .react-tabs__tab-panel {
+            // border: 10px solid white;
+        }
+        .react-tabs__tab {
+            .tab-inner {
+                padding: 12px 16px 0 16px;
+                border: 2px solid white;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+            }
+
+            &--selected {
+                background: transparent;
+                border: none;
+
+                .tab-inner {
+                    background: var(--color-green-10);
+                }
+            }
+        }
+    }
+
+    .react-tabs__tab {
+        padding: 0px 12px
+    }
+
+    .react-tabs__tab--selected {
+        background: transparent;
+        border: none;
+
+        .tab-inner {
+            background: green;
+        }
+    }
+
+    .react-tabs__tab-panel--selected {
+        height: 75vh;
+        background: var(--color-green-10);
+        border-radius: 40px;
+        padding: 40px;
+        border-top: 2px solid white;
+        display: flex;
+        justify-content: center;
+
+        .text {
+            color: var(--color-purple);
+            text-align: left;
+            font-size: 18px;
+            padding: 30px 80px;
+            font-weight: 600;
+        }
+    }
+}

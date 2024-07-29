@@ -1,0 +1,43 @@
+.squid {
+  border: 2px solid var(--background-topbar);
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  min-height: 85vh;
+
+  .warning {
+    max-width: 360px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 600;
+    }
+    .des {
+      margin-left: 2rem;
+      font-size: var(--font-size-xs);
+    }
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-container {
+    flex-direction: column;
+  }
+}

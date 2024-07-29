@@ -1,0 +1,139 @@
+:root {
+  // theme
+  --background: #ffffff;
+  --background-topbar: #4f50ff;
+  --background-button-connect: #1d1b1e;
+  --background-active: #1d1b1e;
+  --color-on-background: #2c2830;
+  --color-topbar-background: #ffffff;
+  --color-on-background-active: #ffffff;
+  --border: #191919;
+
+  // default
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-purple: #61139e;
+
+  --color-black-10: #1d1b1e;
+  --color-black-15: #1d1c1e;
+  --color-black-20: #191919;
+  --color-black-30: #221f20;
+  --color-black-40: #2c2830;
+
+  --color-white-10: #f3f3f3;
+  --color-white-20: #f2f2f2;
+
+  --color-gray: #a4a3a3;
+  --color-gray-1: #707070;
+  --color-gray-10: #f7f5f2;
+
+  --color-blue: #4f50ff;
+  --color-blue-1: #6b6fff;
+  --color-blue-2: #888eff;
+  --color-blue-3: #a4adff;
+
+  --color-green: #b2ff00;
+  --color-green-2: rgba(22, 122, 6, 1);
+  --color-green-3: #98b061;
+  --color-green-4: #5e7035;
+  --color-green-5: #435221;
+  --color-green-6: #303c18;
+  --color-green-10: #e4ffa5;
+  --color-green-20: #7daf0a;
+
+  --color-purple: #4f008d;
+  --color-purple-10: #410a6b;
+  --color-purple-20: #370260;
+  --color-purple-30: #b698ce;
+
+  --color-orange: #fe9800;
+  --color-red: #e21f1e;
+  --color-red-1: #ff4d4f;
+
+  --color-border: #cccccc;
+  --color-border-1: #e2e2e2;
+  --color-border-filter: #1d1b1e1a;
+
+  --color-grey: rgba(112, 112, 112, 1);
+  --color-grey-2: #3f3d40;
+
+  // font-family
+  --font-agrandir: "Agrandir", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-space-mono: "Space Mono", monospace;
+
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-s-1: 17px;
+  --font-size-sm: 18px;
+  --font-size-sm-1: 19px;
+  --font-size-m: 20px;
+  --font-size-m-1: 21px;
+  --font-size-m-2: 22px;
+  --font-size-m-3: 24px;
+  --font-size-xm: 26px;
+  --font-size-xm-1: 27px;
+  --font-size-xm-2: 28px;
+  --font-size-xl: 30px;
+  --font-size-xl-2: 32px;
+  --font-size-l: 40px;
+  --font-size-xxl: 50px;
+  --font-size-xxl-1: 66px;
+  --font-size-xxm: 70px;
+  --font-size-xxm-1: 80px;
+  --font-size-xxm-2: 90px;
+  --font-size-xxm-3: 120px;
+  --font-size-xxm-4: 140px;
+  --font-size-xxx: 160px;
+
+  --line-height-67: 67%;
+  --line-height-71: 71%;
+  --line-height-74: 74%;
+  --line-height-91: 91%;
+  --line-height-100: 100%;
+  --line-height-107: 107%;
+  --line-height-109: 109%;
+  --line-height-110: 110%;
+  --line-height-111: 111%;
+  --line-height-114: 114%;
+  --line-height-118: 118%;
+  --line-height-125: 125%;
+  --line-height-127: 127%;
+  --line-height-128: 128%;
+  --line-height-129: 129%;
+  --line-height-130: 130%;
+  --line-height-131: 131%;
+  --line-height-132: 132%;
+  --line-height-133: 133%;
+  --line-height-138: 138%;
+  --line-height-139: 139%;
+  --line-height-140: 140%;
+  --line-height-143: 143%;
+  --line-height-144: 144%;
+  --line-height-148: 148%;
+  --line-height-150: 150%;
+  --line-height-155: 155%;
+  --line-height-160: 160%;
+  --line-height-167: 167%;
+  --line-height-169: 169%;
+  --line-height-182: 182%;
+  --line-height-185: 185%;
+  --line-height-186: 186%;
+  --line-height-188: 188%;
+  --line-height-212: 212%;
+  --line-height-225: 225%;
+  --line-height-231: 231%;
+  --line-height-281: 281%;
+  --line-height-291: 291%;
+  --line-height-375: 375%;
+  --line-height-463: 463%;
+  --line-height-465: 465%;
+
+  --height-header-top: 42.5px;
+  --height-header: 127px;
+  --height-header-medium: 113px;
+  --height-header-small: 103px;
+  --height-item-menu-header: 30px;
+  --height-bottom-footer: 100px;
+}

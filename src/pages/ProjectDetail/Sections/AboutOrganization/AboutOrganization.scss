@@ -1,0 +1,111 @@
+.about-organization {
+  border-bottom: 1px solid var(--color-black-10);
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &-top {
+    .section-name {
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+
+      .orgs-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        background-color: var(--color-white-10);
+      }
+
+      &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .description {
+      font-family: var(--font-dm-sans);
+      color: var(--color-black-10);
+      line-height: var(--line-height-160);
+      margin-bottom: 25px;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .description {
+      font-family: var(--font-dm-sans);
+      line-height: var(--line-height-160);
+      margin-bottom: 20px;
+
+      .text-link {
+        text-decoration: underline;
+      }
+    }
+
+    .checklists {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-top {
+      .section-name {
+        .orgs-avatar {
+          width: 105px;
+          height: 105px;
+        }
+
+        &-right {
+          .title {
+            font-size: var(--font-size-xm-2);
+          }
+        }
+      }
+      .description {
+        font-size: var(--font-size-m);
+      }
+      .bottom-buttons {
+        flex-direction: row;
+        gap: 50px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 80px;
+    padding-bottom: 60px;
+    margin-bottom: 70px;
+
+    &-top {
+      .description {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-bottom {
+      flex-direction: row;
+      gap: 80px;
+
+      .box {
+        width: calc(50% - 40px);
+      }
+    }
+  }
+}

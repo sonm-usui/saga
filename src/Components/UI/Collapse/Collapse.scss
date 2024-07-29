@@ -1,0 +1,49 @@
+.collapse-component {
+  font-family: var(--font-agrandir);
+  font-size: var(--font-size-s);
+  padding: 10px 0;
+  border-radius: 0 !important;
+
+  .ant-collapse {
+    &-header {
+      padding: 0 !important;
+      color: var(--color-black-10) !important;
+
+      &-text {
+        font-size: var(--font-size-s);
+        font-weight: 400;
+      }
+    }
+    &-content {
+      color: var(--color-black-10) !important;
+
+      &-box {
+        padding: 0 !important;
+      }
+    }
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--color-black-10);
+    cursor: pointer;
+
+    &-unexpanded {
+      transform: rotateX(180deg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .ant-collapse {
+      &-header {
+        &-text {
+          font-size: var(--font-size-sm);
+        }
+      }
+    }
+  }
+}

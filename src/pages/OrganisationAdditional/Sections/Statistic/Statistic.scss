@@ -1,0 +1,106 @@
+.statistic {
+  margin-bottom: 40px;
+
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      padding: 35px 25px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.101961);
+      border-radius: 10px;
+      position: relative;
+      &-value {
+        font-size: var(--font-size-xl-2);
+        font-family: var(--font-agrandir);
+        font-weight: 500;
+        line-height: 100%;
+        position: relative;
+
+        .percentage {
+          position: absolute;
+          top: -12px;
+          right: -13px;
+          color: var(--color-black-10);
+          font-size: var(--font-size-m);
+          font-family: var(--font-space-mono);
+          font-weight: 500;
+        }
+
+        &.active {
+          color: var(--color-blue);
+        }
+      }
+      &-title {
+        text-align: center;
+        font-family: var(--font-agrandir);
+        font-weight: 700;
+        opacity: 0.3;
+
+        &.active {
+          color: var(--color-blue);
+          opacity: 1;
+        }
+      }
+      .currency {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        background: var(--color-black-10);
+        color: var(--color-white);
+        font-family: var(--font-dm-sans);
+        font-size: vảr(--font-size-m);
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 40px;
+
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        svg {
+          max-width: 11px;
+          height: 19px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+
+    &-title {
+      margin-bottom: 50px;
+    }
+
+    &-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    &-list {
+      &-item {
+        &-value {
+          font-size: var(--font-size-l);
+        }
+      }
+    }
+  }
+}

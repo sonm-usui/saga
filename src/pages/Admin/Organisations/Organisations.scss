@@ -1,0 +1,22 @@
+.admin-organisations {
+  padding: 40px 0;
+
+  .content-header {
+    margin-bottom: 24px;
+  }
+
+  .top-buttons {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .options-marketplace {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+}

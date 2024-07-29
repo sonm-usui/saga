@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    width: 306px;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 238px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    img {
+      width: 185px;
+    }
+  }
+}

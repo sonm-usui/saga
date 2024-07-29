@@ -1,0 +1,7 @@
+export const POST_SURVEY = 'POST_SURVEY';
+
+export const LEAVE_POST_SURVEY = 'LEAVE_POST_SURVEY';
+
+export const POST_SUPPORT = 'POST_SUPPORT';
+
+export const LEAVE_POST_SUPPORT = 'LEAVE_POST_SUPPORT';

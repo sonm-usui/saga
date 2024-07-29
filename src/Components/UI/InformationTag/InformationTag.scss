@@ -1,0 +1,22 @@
+.information-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: var(--font-agrandir);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.filled {
+    background: var(--color-white-10);
+    padding: 10px 13px;
+    border-radius: 5px;
+  }
+}

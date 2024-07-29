@@ -1,0 +1,63 @@
+.admin-organisations-detail {
+  padding: 40px 0;
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-border-filter);
+    border-radius: 8px;
+  }
+
+  .detail-item {
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--color-border-filter);
+
+    .title {
+      font-size: var(--font-size-m);
+      font-family: var(--font-agrandir);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px dashed var(--color-border-filter);
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      .content-item {
+        .item-label {
+          font-size: var(--font-size-sm);
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        .item-value {
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+  .detail-footer {
+    display: flex;
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .detail-item {
+      .content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .detail-item {
+      .content {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}

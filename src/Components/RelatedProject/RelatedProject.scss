@@ -1,0 +1,132 @@
+.related-project {
+  &-title {
+    margin-bottom: 23px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-item {
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.101961);
+      overflow: hidden;
+
+      .media {
+        &-image-display {
+          padding-top: 55%;
+        }
+      }
+
+      &-body {
+        padding: 30px 16px;
+
+        .title {
+          margin-bottom: 10px;
+        }
+
+        .description {
+          line-height: var(--line-height-160);
+          margin-bottom: 16px;
+          display: -webkit-box;
+          -webkit-line-clamp: 8;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .group-button {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .btn-fund-now {
+          padding: 13px 20px 12px 20px;
+          font-family: var(--font-dm-sans);
+          font-weight: 500;
+
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            span {
+              text-decoration: underline;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .bottom-info {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 16px 20px;
+          border-top: 1px solid var(--color-border);
+          margin-top: 30px;
+          padding-top: 30px;
+
+          .by {
+            font-family: var(--font-dm-sans);
+            font-weight: 500;
+          }
+
+          .text-link {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-title {
+      font-size: var(--font-size-l);
+    }
+    &-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      &-item {
+        width: calc(50% - 15px);
+
+        &-body {
+          padding: 30px 20px;
+
+          .title {
+            font-size: var(--font-size-xm);
+          }
+
+          .description {
+            font-size: var(--font-size-sm);
+          }
+
+          .btn-fund-now {
+            .price {
+              gap: 10px;
+            }
+          }
+
+          .bottom-info {
+            gap: 20px;
+            padding-top: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &-list {
+      gap: 40px;
+
+      &-item {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+}

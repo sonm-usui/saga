@@ -1,0 +1,115 @@
+.whyweb3 {
+  min-height: 100vh;
+  font-family: var(--font-agrandir);
+  padding-top: 70px;
+  background-color: var(--color-black-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 120px;
+
+  .title {
+    text-transform: uppercase;
+    font-family: var(--font-space-mono);
+    color: var(--color-white);
+    font-size: var(--font-size-sm);
+    line-height: 200%;
+    margin-bottom: 60px;
+  }
+
+  .sub {
+    max-width: 480px;
+    font-size: var(--font-size-xl-2);
+    line-height: var(--line-height-133);
+    margin-bottom: 48px;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-end;
+    gap: 4%;
+
+    .left-text {
+      // width: 50%;
+
+      .content-1 {
+        margin-bottom: 40px;
+        font-size: var(--font-size-m-3);
+        font-weight: 500;
+        line-height: var(--line-height-150);
+      }
+
+      .content-2 {
+        font-family: var(--font-dm-sans);
+        font-size: var(--font-size-sm);
+        line-height: 180%;
+        font-weight: 400;
+
+        span {
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .whyweb3 {
+    min-height: calc(100vh - var(--height-header-medium));
+    padding-bottom: 120px;
+
+    .content {
+      flex-direction: column;
+      gap: 32px;
+
+      .left-text {
+        width: 100%;
+
+        .content-1 {
+          font-size: var(--font-size-m-2);
+        }
+
+        .content-2 {
+          font-size: var(--font-size-s);
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .whyweb3 {
+    .title {
+      font-size: var(--font-size-s);
+    }
+    .sub {
+      max-width: 100%;
+      font-size: var(--font-size-m-2);
+    }
+    .content {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .whyweb3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+  .whyweb3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

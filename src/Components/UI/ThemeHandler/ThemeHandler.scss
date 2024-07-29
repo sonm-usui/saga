@@ -1,0 +1,27 @@
+.header {
+  &.purple {
+    * {
+      --background: transparent;
+      --background-topbar: transparent;
+      --background-button-connect: #4f50ff;
+      --background-active: #ffffff;
+      --color-on-background: #ffffff;
+      --color-topbar-background: #ffffff;
+      --color-on-background-active: #1d1b1e;
+      --border: #ffffff;
+    }
+  }
+
+  &.dark {
+    * {
+      --background: #1d1b1e;
+      --background-topbar: #1d1b1e;
+      --background-button-connect: #4f50ff;
+      --background-active: #ffffff;
+      --color-on-background: #ffffff;
+      --color-topbar-background: #ffffff;
+      --color-on-background-active: #1d1b1e;
+      --border: #ffffff;
+    }
+  }
+}

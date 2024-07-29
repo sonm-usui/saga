@@ -1,0 +1,496 @@
+.homepage {
+  min-height: calc(100vh - var(--height-header));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background: radial-gradient(41.65% 52.06% at 65.22% 46.44%, #61139e 0%, #4f008d 100%);
+
+
+ 
+
+  &__tabs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 100px;
+  }
+
+  &__content {
+    transform: translateY(-3vw);
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+      position: relative;
+
+      p {
+        color: var(--color-white);
+        font-family: var(--font-agrandir);
+        font-size: var(--font-size-xxx);
+        font-weight: 500;
+        height: fit-content;
+        line-height: var(--line-height-91);
+        margin: 0;
+
+        span {
+          color: var(--color-green);
+        }
+      }
+      .leaf-1 {
+        max-width: 10%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-41%, 13%);
+      }
+      .leaf-2 {
+        max-width: 13%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-41%, -120%);
+      }
+      .leaf-3 {
+        max-width: 8%;
+        left: 0;
+        position: absolute;
+        top: -10%;
+      }
+      .leaf-4 {
+        max-width: 18%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(176%, -42%);
+      }
+      .leaf-5 {
+        max-width: 29%;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vw;
+  }
+
+  .text-coming-soon {
+    margin-top: 25px;
+  }
+
+  .my-impact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent; /* Changed to a more visually appealing blue */
+    padding: 10px; /* Added padding for better spacing */
+  }
+
+  .my-impact-card {
+    width: 100%;
+    height: 110px; /* Adjusted width */
+    background-color: transparent; /* Set background to transparent */
+    padding: 20px; /* Padding for content spacing */
+    border: 1px solid #a09f9f; /* Added a border with color */
+    border-radius: 8px; /* Rounded corners for the border */
+    text-align: start; /* Centered text inside cards */
+    color: #ffffff; /* Changed text color to match the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for card depth effect */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .estimated {
+    color: #44e044;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .card-description {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 8px; /* Added margin for spacing between elements */
+  }
+
+  .card-icon {
+    width: 25px; /* Increased icon size for better visibility */
+    height: 25px;
+    background-color: white; /* Placeholder background color for icons */
+    border-radius: 50%; /* Rounded icon appearance */
+    margin-right: 10px; /* Spacing between icon and text */
+  }
+
+  .card-description p {
+    margin: 0; /* Removed default margin for p tag */
+    font-size: 14px; /* Adjusted font size for better readability */
+  }
+  .countries-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    gap: 16px; /* Spacing between items */
+    padding: 20px; /* Padding around the container */
+    background-color: transparent; /* Light background color for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  .country {
+    width: 150px; /* Fixed width for each country item */
+    background-color: transparent; /* White background for each item */
+    padding: 12px; /* Padding inside each item */
+    border: 1px solid #e0e0e0; /* Light border for each item */
+    border-radius: 8px; /* Rounded corners for each item */
+    text-align: center; /* Center text inside each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+
+  .country:hover {
+    background-color: #e8e8e862; /* Slightly darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+
+  .country div {
+    font-size: 16px; /* Font size for the country name */
+    color: #ffffff;
+    font-weight: 600; /* Slightly bold text */
+  }
+
+  .impact-title {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .pie-label {
+    color: #adadad;
+  }
+
+  .country-item {
+    color: #ffffff;
+
+    padding: 4px;
+    display: flex;
+    align-items: start;
+  }
+  .activities-item {
+    color: #ffffff;
+
+    padding: 4px;
+    display: flex;
+    align-items: start;
+  }
+  @media screen and (max-width: 1400px) {
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxm-4);
+        }
+
+        .leaf-1 {
+          svg {
+            width: 80px;
+            height: auto;
+          }
+        }
+
+        .leaf-3 {
+          top: -6%;
+
+          svg {
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(201%, -42%);
+
+          svg {
+            width: 110px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          svg {
+            width: 180px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxm-3);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    min-height: calc(100vh - var(--height-header-medium));
+  }
+
+  @media screen and (max-width: 1080px) {
+    &__title {
+      &-text {
+        .leaf-1 {
+          svg {
+            width: 70px;
+            height: auto;
+          }
+        }
+
+        .leaf-3 {
+          top: -5%;
+
+          svg {
+            width: 45px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(201%, -42%);
+
+          svg {
+            width: 100px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          svg {
+            width: 160px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxm-2);
+        }
+
+        .leaf-1 {
+          svg {
+            width: 60px;
+            height: auto;
+          }
+        }
+
+        .leaf-3 {
+          top: -4%;
+
+          svg {
+            width: 40px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(201%, -42%);
+
+          svg {
+            width: 90px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          svg {
+            width: 140px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__menu {
+      bottom: 10vw;
+    }
+
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxm-1);
+        }
+
+        .leaf-1 {
+          svg {
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .leaf-3 {
+          top: -3%;
+
+          svg {
+            width: 35px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(201%, -42%);
+
+          svg {
+            width: 80px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          svg {
+            width: 120px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    &__menu {
+      bottom: 13vw;
+    }
+
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxl);
+          line-height: var(--line-height-110);
+        }
+
+        .leaf-1 {
+          transform: translate(-47%, 44%);
+
+          svg {
+            width: 30px;
+            height: auto;
+          }
+        }
+
+        .leaf-2 {
+          transform: translate(-41%, -80%);
+
+          svg {
+            width: 100px;
+            height: auto;
+          }
+        }
+
+        .leaf-3 {
+          top: -2%;
+
+          svg {
+            width: 30px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(170%, -40%);
+
+          svg {
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          svg {
+            width: 80px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    min-height: calc(100vh - var(--height-header-small));
+
+    &__menu {
+      bottom: 120px;
+    }
+
+    &__content {
+      transform: translateY(-20vw);
+    }
+
+    &__title {
+      &-text {
+        p {
+          font-size: var(--font-size-xxl);
+          line-height: var(--line-height-110);
+        }
+
+        .leaf-1 {
+          transform: translate(-47%, 44%);
+
+          svg {
+            width: 30px;
+            height: auto;
+          }
+        }
+
+        .leaf-2 {
+          transform: translate(-100%, -80%);
+        }
+
+        .leaf-3 {
+          top: -2%;
+
+          svg {
+            width: 30px;
+            height: auto;
+          }
+        }
+
+        .leaf-4 {
+          transform: translate(170%, -40%);
+
+          svg {
+            width: 50px;
+            height: auto;
+          }
+        }
+
+        .leaf-5 {
+          display: none;
+        }
+      }
+    }
+  }
+}
